@@ -1,0 +1,9 @@
+Efib=[]
+Efib.append(0)
+Efib.append(2)
+for i in range(1,15):
+    if 4*Efib[i]+Efib[i-1]<4000000: #This uses the reccurence relation for even fibbonacci numbers 
+        Efib.append(4*Efib[i]+Efib[i-1])
+    elif 4*Efib[i]+Efib[i-1]>=4000000:
+        print(sum(Efib))
+        
